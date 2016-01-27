@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Home Page</div>
+    <div class="panel-body">
+      
+
+          You Have <h2>{{repositories.length}}</h2> number of repositories
+         <div class="list-group-item" ng-repeat="repository in repositories">
+            <h3> <em class="pull-right">{{repository.name}}</em></h3>
+            <div class="row">
+                    <div class="col-sm-6">
+                      <h2>{{repository.name}}</h2>
+                      <div class="panel-footer text-center">
+                      <ul class="list-inline">
+                        <li><i class="ion-star"></i> {{repository.stars | number}} stars</li>
+                        <li><i class="ion-fork-repo"></i> {{repository.forks | number}} forks</li>
+                        <li><i class="ion-pull-request"></i> {{repository.issues | number}} issues</li>
+                      </ul>
+                    </div>
+                    </div>
+
+          </div>
+
+    
+      </div>
+    </div>
+    
+  </div>
+</div>
